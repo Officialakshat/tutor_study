@@ -1,0 +1,47 @@
+<div class="container mx-auto px-4 py-20">
+  <div class="flex flex-col lg:flex-row items-center gap-10">
+      <div class="lg:w-1/2 animate-fadeInLeft" x-data="{ activeAccordion: 1 }">
+          <div class="space-y-4">
+              <div class="border-b border-gray-200">
+                  <!-- <button @click="activeAccordion = activeAccordion === 1 ? null : 1" class="flex justify-between items-center w-full py-4 text-left">
+                      <span class="text-lg font-semibold">Why choose Study Tutorials?</span>
+                      <svg class="w-6 h-6 transform transition-transform duration-200" :class="{ 'rotate-180': activeAccordion === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button> -->
+                  <div x-show="activeAccordion === 1" x-collapse>
+                      <div class="pb-4">
+                          <h5 class="font-semibold mb-2">We provide high-quality content and personalized learning experiences.</h5>
+                          <p class="text-gray-600">Study Tutorials offers a wide range of tutorials and courses led by experts, tailored to meet your learning needs and help you succeed.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="border-b border-gray-200">
+                  <!-- <button @click="activeAccordion = activeAccordion === 2 ? null : 2" class="flex justify-between items-center w-full py-4 text-left">
+                      <span class="text-lg font-semibold">What courses do you offer?</span>
+                      <svg class="w-6 h-6 transform transition-transform duration-200" :class="{ 'rotate-180': activeAccordion === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button> -->
+                  <div x-show="activeAccordion === 2" x-collapse>
+                      <div class="pb-4">
+                          <h5 class="font-semibold mb-2">We offer courses across various fields, including technology, business, and personal development.</h5>
+                          <p class="text-gray-600">Our course catalog is constantly expanding to include the latest industry trends and skills, ensuring you have access to the most relevant content.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="border-b border-gray-200">
+                  <!-- <button @click="activeAccordion = activeAccordion === 3 ? null : 3" class="flex justify-between items-center w-full py-4 text-left">
+                      <span class="text-lg font-semibold">How do I get started?</span>
+                      <svg class="w-6 h-6 transform transition-transform duration-200" :class="{ 'rotate-180': activeAccordion === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button> -->
+                  <div x-show="activeAccordion === 3" x-collapse>
+                      <div class="pb-4">
+                          <h5 class="font-semibold mb-2">Getting started with Study Tutorials is easy!</h5>
+                          <p class="text-gray-600">Simply sign up for an account, browse our course offerings, and enroll in the courses that interest you. You can start learning immediately from any device.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lg:w-1/2 animate-rotateMoveRight">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/0*FdLLSjLPudGd-Pt5" alt="FAQ Illustration" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+  </div>
+</div>

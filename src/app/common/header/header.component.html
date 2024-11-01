@@ -1,0 +1,30 @@
+<header>
+<nav class="flex justify-between items-center py-4  px-14">
+  <a href="#">
+      <h1 class="text-4xl font-bold font text-pink-600"><i class="fas fa-book me-3"></i>StudyTutor</h1>
+  </a>
+  <button class="md:hidden" onclick="barToggle()"  type="button" >
+      <span onclick="barToggle()" class="fa fa-bars"></span>
+  </button>
+  <div class="text-gray-500 hidden  md:flex space-x-6 font-semibold ">
+
+          <a routerLink="app-mainview" class="text-gray-500  hover:text-pink-500 ">Home</a>
+          <a routerLink="app-about" class="text-gray-500  hover:text-pink-500 ">About</a>
+          <a routerLink="app-courses" class="text-gray-500  hover:text-pink-500 ">Courses</a>
+          <a routerLink="app-testimonial" class="text-gray-500  hover:text-pink-500 ">Testimonials</a>
+          <a routerLink="app-contact" class="text-gray-500  hover:text-pink-500 ">Contact Us</a>
+
+  </div>
+
+
+
+
+</nav>
+<div *ngIf="isMenuActive"  class="text-gray-500 font-semibold md:hidden px-14 flex flex-col space-y-3">
+  <a routerLink="app-mainview" class="text-gray-500  hover:text-pink-500 ">Home</a>
+  <a routerLink="app-about" class="text-gray-500  hover:text-pink-500 ">About</a>
+  <a routerLink="app-courses" class="text-gray-500  hover:text-pink-500 ">Courses</a>
+  <a routerLink="app-testimonial" class="text-gray-500  hover:text-pink-500 ">Testimonials</a>
+  <a routerLink="app-contact" class="text-gray-500  hover:text-pink-500 ">Contact Us</a>
+</div>
+</header>
