@@ -5,14 +5,14 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 isMenuActive: Boolean = true;
 
- barToggle(){
+barToggle(){
   this.isMenuActive =! this.isMenuActive;
 }
 

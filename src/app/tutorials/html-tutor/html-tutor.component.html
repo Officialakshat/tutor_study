@@ -1,7 +1,50 @@
-<div class=" h-screen justify-center flex">
-  <h1 class="text-3xl font-bold text-pink-500 pt-10">
-
-   Html Tutorial
-
-  </h1>
+<div class="flex flex-col lg:flex lg:flex-row px-4 ">
+  <aside class="w-80 " [@sidebarAnimation]>
+    <nav class="">
+      <ul class="space-y-4 flex flex-col items-center my-3 font-semibold text-lg text-pink-500 mx-auto">
+        <li>
+          <a routerLink="intro" class="hover:bg-pink-500 hover:text-white py-2 px-10 ">Html Introduction</a>
+        </li>
+        <li>
+          <a routerLink="element"  class="hover:bg-pink-500 hover:text-white py-2 px-10" >Html Elements</a>
+        </li>
+        <li>
+          <a routerLink="attribute"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Attributes</a>
+        </li>
+        <li>
+          <a routerLink="forms"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Forms</a>
+        </li>
+        <li>
+          <a routerLink="list"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html List</a>
+        </li>
+        <li>
+          <a routerLink="image"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Image</a>
+        </li>
+        <li>
+          <a routerLink="style"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Styles</a>
+        </li>
+        <li>
+          <a routerLink="link"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Link</a>
+        </li>
+        <li>
+          <a routerLink="comment"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Comments</a>
+        </li>
+        <li>
+          <a routerLink="color"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Color</a>
+        </li>
+        <li>
+          <a routerLink="table"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Tables</a>
+        </li>
+        <li>
+          <a routerLink="div"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Div</a>
+        </li>
+        <li>
+          <a routerLink="layout"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Html Layout</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+   <div class="flex-1 ">
+     <router-outlet></router-outlet>
+   </div>
 </div>

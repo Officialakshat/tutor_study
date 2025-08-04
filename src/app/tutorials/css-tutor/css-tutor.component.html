@@ -1,13 +1,53 @@
-<div class=" h-screen justify-center flex">
-  <h1 class="text-3xl font-bold text-pink-500 pt-10">
-    Css Tutorial
-    <!-- <div class=" hero-about h-96 mt-5   bg-gray-100 bg-cover flex  flex-col justify-center items-center "  style="background-image: url(https://media.istockphoto.com/id/1401859866/vector/abstract-composed-of-pink-curves.jpg?s=612x612&w=0&k=20&c=-tIt7hFPTnAl7xDncC3mZc0kIAcUfS8DGqI-f-11N30=);">
-      <h1 class="font-bold text-5xl text-gray-700 mb-3">{{title_name}}</h1>
-      <p class="font-semibold"> Home / Pages / <span class="text-pink-500"> {{title_name}} </span></p>
-     </div><div class=" hero-about h-96 mt-5 hidden  bg-gray-100 bg-cover  flex-col justify-center items-center "  style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/032/422/097/small/abstract-illustration-background-design-photo.jpg);">
-       <h1 class="font-bold text-7xl text-gray-700 mb-3">About Us</h1>
-      <p class="font-semibold">Home / Pages / <span class="text-pink-500"> About Us </span></p>
-     </div>  -->
-
-  </h1>
-</div>
+<div class="flex flex-col lg:flex lg:flex-row  ">
+    <aside class="w-80 " [@sidebarAnimation]>
+      <nav class="">
+        <ul class="space-y-4 flex flex-col items-center my-3 font-semibold text-lg text-pink-500 mx-auto">
+          <li>
+            <a routerLink="css-intro" class="hover:bg-pink-500 hover:text-white py-2 px-10 ">Css Introduction</a>
+          </li>
+          <li>
+            <a routerLink="css-syntax"  class="hover:bg-pink-500 hover:text-white py-2 px-10" >Css Syntex</a>
+          </li>
+          <li>
+            <a routerLink="css-comments"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Comments</a>
+          </li>
+          <li>
+            <a routerLink="css-colors"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Colors</a>
+          </li>
+          <li>
+            <a routerLink="css-backgrounds"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Backgrounds</a>
+          </li>
+          <li>
+            <a routerLink="css-border"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Border</a>
+          </li>
+          <li>
+            <a routerLink="css-margins"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Margins</a>
+          </li>
+          <li>
+            <a routerLink="css-padding"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Padding</a>
+          </li>
+          <li>
+            <a routerLink="css-box-model"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Box Model</a>
+          </li>
+          <li>
+            <a routerLink="css-outline"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Outline</a>
+          </li>
+          <li>
+            <a routerLink="css-text"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Text</a>
+          </li>
+          <li>
+            <a routerLink="css-fonts"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Fonts</a>
+          </li>
+          <li>
+            <a routerLink="css-icons"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Icons</a>
+          </li>
+          <li>
+            <a routerLink="css-links"  class="hover:bg-pink-500 hover:text-white py-2 px-10">Css Links</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+     <div class="flex-1 ">
+       <router-outlet></router-outlet>
+     </div>
+  </div>

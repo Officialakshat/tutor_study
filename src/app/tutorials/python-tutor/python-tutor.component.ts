@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { PyAsideComponent } from '../../asidebar/py-aside/py-aside.component';
 
 @Component({
   selector: 'app-python-tutor',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet, PyAsideComponent, ],
   templateUrl: './python-tutor.component.html',
-  styleUrl: './python-tutor.component.css'
+             
 })
 export class PythonTutorComponent {
 
