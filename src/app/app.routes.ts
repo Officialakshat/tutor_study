@@ -58,9 +58,15 @@ import { LogginComponent } from './loggin/loggin.component';
 
 export const routes: Routes = [
 
+  // {
+  //   path: '',
+  //   component: LogginComponent
+  // },
+
+
   {
     path: '',
-    component: LogginComponent
+    component: MainviewComponent
   },
   {
     path: 'app-about',
